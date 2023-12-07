@@ -38,5 +38,20 @@
     "key" : "NereyeClick",
     "value" : "#react-autowhatever-DestinationInput",
     "type" : "css"
+  },
+  {
+    "key" : "AktarmasızCheckbox",
+    "value" : "label[for='transitFilter']",
+    "type" : "css"
+  },
+  {
+    "key" : "UcuzBiletBulButton",
+    "value" : "button[class='primary-btn block']",
+    "type" : "css"
+  },
+  {
+    "key" : "AramayiFavorilereEkleButton",
+    "value" : "//*[@id='add-to-favorite-root']/div/div/button",
+    "type" : "xpath"
   }
 ]

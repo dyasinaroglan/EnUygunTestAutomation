@@ -214,4 +214,50 @@ public class BaseSteps extends BaseTest {
         assertEquals(expectedCount, actualCount, "Expected count does not match for " + key);
         logger.info(key + " elementi sayısı " + expectedCount + " değerine eşittir.");
     }
+
+    public void javascriptclicker(WebElement element) {
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        // arguments[0] ifadesi element değişkenini ifade eder.
+        executor.executeScript("arguments[0].click();", element);
+        // click() metodu arguments[0] ifadesine ait elemente tıklama işlemini gerçekleştirir.
+    }
+    @Step("<key> elementine javascript ile tıkla")
+    public void clickToElementWithJavaScript(String key) {
+        WebElement element = findElement(key);
+        javascriptclicker(element);
+        logger.info(key + " elementine javascript ile tıklandı");
+    }
+    @Step("<key> olarak random bir değer seçilir")
+    public void checkBoxRandom(String key) throws InterruptedException {
+        List<WebElement> checkBoxElements = findElements(key);
+        int randomIndex = new Random().nextInt(checkBoxElements.size());
+        Thread.sleep(2000);
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        if (!checkBoxElements.get(randomIndex).isSelected()) {
+            executor.executeScript("arguments[0].click();", checkBoxElements.get(randomIndex));
+        }
+        logger.info(key + " tarihlerden herhangi bir değer seçildi");
+    }
+    @Step("<key> elementinin disabled olduğu kontrol edilir")
+    public void Disabled(String key) {
+        WebElement element = findElement(key);
+        Assertions.assertTrue(element.isDisplayed(), "Element disabled değil");
+        logger.info(key + " elementi disabled");
+    }
+    public boolean isElementVisible(String key, long timeout) {
+        WebDriverWait waitt = new WebDriverWait(driver, timeout);
+        try {
+            waitt.until(ExpectedConditions.visibilityOfElementLocated(getElementInfoBy(findElementInfoByKey(key))));
+        } catch (Exception e) {
+            return false;
+        }
+        logger.info(key + " - visible");
+        return true;
+    }
+    @Step("<key> elementlerinin oldugu dogrulanir")
+    public void confirmIfElementsFoundAndShowElementCount(String key) {
+        Assertions.assertTrue(isElementVisible(key, 5), "Elementin oldugu dogrulanamadi");
+        logger.info(key + " elementlerinin sayfada oldugu dogrulandi!");
+        logger.info(key + " keyli elementlerin sayisi: " + findElements(key).size());
+    }
 }

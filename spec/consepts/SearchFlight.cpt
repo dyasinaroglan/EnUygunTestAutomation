@@ -1,15 +1,26 @@
 # Ana Sayfaya gidilir ve 'Uçak' butonuna tıklanır
 * Elementine tıkla "UcakBiletiButton"
 
-# 'Nereden' <text1> ve 'Nereye' <text2> alanları belirlenir
+# 'Nereden' input alanına <text1> ve 'Nereye' input alanına <text2> girilir
 * "NeredenInput" li elementi bul temizle ve <text1> değerini yaz
+* "1" saniye bekle
 * Elementine tıkla "NeredenClick"
 * "NereyeInput" li elementi bul temizle ve <text2> değerini yaz
 * "1" saniye bekle
 * Elementine tıkla "NereyeClick"
 
-# Gidiş dönüş tarihleri random belirlenir
+# Gidiş ve dönüş tarihleri random belirlenir
+* "2" saniye bekle
 * Elementine tıkla "GidisTarihiButton"
-* "GidisTarihiSelect" menusünden random seçim yap
+* "GidisTarihiSelect" olarak random bir değer seçilir
 * Elementine tıkla "DönüsTarihiButton"
-* "GidisTarihiSelect" menusünden random seçim yap
+* "GidisTarihiSelect" olarak random bir değer seçilir
+
+# 'Aktarmasız' checkbox'ına tıklayıp seçilir
+* Elementine tıkla "AktarmasızCheckbox"
+
+# 'Ucuz Bilet Bul' butonuna tıklanır ve sayfanın açıldığı kontrol edilir
+* Elementine tıkla "UcuzBiletBulButton"
+* "1" saniye bekle
+* "AramayiFavorilereEkleButton" elementinin disabled olduğu kontrol edilir
+* "AramayiFavorilereEkleButton" elementlerinin oldugu dogrulanir

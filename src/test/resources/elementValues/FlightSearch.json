@@ -1,0 +1,7 @@
+[
+  {
+    "key": "UcakBiletiButton",
+    "value": "//*[@id='__next']/div/div[1]/div/div/div/div/div/div[2]/div/div/div[1]/a",
+    "type" : "xpath"
+  }
+]

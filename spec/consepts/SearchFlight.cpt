@@ -24,3 +24,13 @@
 * "1" saniye bekle
 * "AramayiFavorilereEkleButton" elementinin disabled olduğu kontrol edilir
 * "AramayiFavorilereEkleButton" elementlerinin oldugu dogrulanir
+
+# Bir yetişkin, bir çocuk bileti alınır
+* Elementine tıkla "YolcuSelect"
+* "1" saniye bekle
+* Elementine tıkla "Cocuk+Button"
+
+# 'Business' sınıfı seçilir ve 'Tamam' butonuna tıklanır
+* Elementine tıkla "BusinessButton"
+* Elementine tıkla "TamamButton"
+

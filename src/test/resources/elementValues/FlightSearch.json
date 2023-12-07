@@ -53,5 +53,25 @@
     "key" : "AramayiFavorilereEkleButton",
     "value" : "//*[@id='add-to-favorite-root']/div/div/button",
     "type" : "xpath"
+  },
+  {
+    "key" : "Cocuk+Button",
+    "value" : "button[data-testid='passengerCountIncrease-1']",
+    "type" : "css"
+  },
+  {
+    "key" : "YolcuSelect",
+    "value" : "button[class='default-btn block passenger-select-button']",
+    "type" : "css"
+  },
+  {
+    "key" : "BusinessButton",
+    "value" : "(//button[@class='base-button '])[1]",
+    "type" : "xpath"
+  },
+  {
+    "key" : "TamamButton",
+    "value" : "(//button[@class='primary-link-btn'])[1]",
+    "type" : "xpath"
   }
 ]

@@ -1,2 +1,15 @@
 # Ana Sayfaya gidilir ve 'Uçak' butonuna tıklanır
 * Elementine tıkla "UcakBiletiButton"
+
+# 'Nereden' <text1> ve 'Nereye' <text2> alanları belirlenir
+* "NeredenInput" li elementi bul temizle ve <text1> değerini yaz
+* Elementine tıkla "NeredenClick"
+* "NereyeInput" li elementi bul temizle ve <text2> değerini yaz
+* "1" saniye bekle
+* Elementine tıkla "NereyeClick"
+
+# Gidiş dönüş tarihleri random belirlenir
+* Elementine tıkla "GidisTarihiButton"
+* "GidisTarihiSelect" menusünden random seçim yap
+* Elementine tıkla "DönüsTarihiButton"
+* "GidisTarihiSelect" menusünden random seçim yap

@@ -3,5 +3,40 @@
     "key": "UcakBiletiButton",
     "value": "//*[@id='__next']/div/div[1]/div/div/div/div/div/div[2]/div/div/div[1]/a",
     "type" : "xpath"
+  },
+  {
+    "key" : "NeredenInput",
+    "value" : "#OriginInput",
+    "type" : "css"
+  },
+  {
+    "key" : "NereyeInput",
+    "value" : "#DestinationInput",
+    "type" : "css"
+  },
+  {
+    "key" : "NeredenClick",
+    "value" : "//*[@id='react-autowhatever-OriginInput']",
+    "type" : "xpath"
+  },
+  {
+    "key" : "GidisTarihiButton",
+    "value" : "#DepartureDate",
+    "type" : "css"
+  },
+  {
+    "key" : "GidisTarihiSelect",
+    "value" : "(//div[@class='CalendarMonth CalendarMonth_1'])[3]/table/tbody/tr/td[@role='button']",
+    "type" : "xpath"
+  },
+  {
+    "key" : "DönüsTarihiButton",
+    "value" : "#ReturnDate",
+    "type" : "css"
+  },
+  {
+    "key" : "NereyeClick",
+    "value" : "#react-autowhatever-DestinationInput",
+    "type" : "css"
   }
 ]

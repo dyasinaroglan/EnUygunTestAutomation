@@ -17,10 +17,6 @@ public class ElementInfo {
     @Expose
     private String type;
 
-    @SerializedName("index")
-    @Expose
-    private int index;
-
     public String getKey() {
         return key;
     }
@@ -33,10 +29,6 @@ public class ElementInfo {
         return type;
     }
 
-    public int getIndex() {
-        return index;
-    }
-
     public void setKey(String key) {
         this.key = key;
     }
@@ -47,10 +39,6 @@ public class ElementInfo {
 
     public void setType(String type) {
         this.type = type;
-    }
-
-    public void setIndex(int index) {
-        this.index = index;
     }
 
     public ElementInfo() {

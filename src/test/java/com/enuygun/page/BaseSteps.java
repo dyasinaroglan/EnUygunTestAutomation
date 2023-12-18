@@ -4,6 +4,7 @@ import com.enuygun.base.BaseTest;
 import com.enuygun.model.ElementInfo;
 import com.thoughtworks.gauge.Step;
 import org.junit.jupiter.api.Assertions;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -259,5 +260,6 @@ public class BaseSteps extends BaseTest {
         Assertions.assertTrue(isElementVisible(key, 5), "Elementin oldugu dogrulanamadi");
         logger.info(key + " elementlerinin sayfada oldugu dogrulandi!");
         logger.info(key + " keyli elementlerin sayisi: " + findElements(key).size());
+
     }
 }

@@ -84,7 +84,7 @@ public class BaseTest {
         return firefoxOptions;
     }
 
-    private void initializeDriver() {
+    private void initializeDriver() {  // WebDriver nesnesi oluşturulur
         switch (browserName.toLowerCase()) {
             case "chrome":
                 driver = new ChromeDriver(chromeOptions());
@@ -97,7 +97,7 @@ public class BaseTest {
         }
     }
 
-    private void setupBrowser() {
+    private void setupBrowser() { // tarayıcı ayarları yapılır
         if ("mac".equalsIgnoreCase(selectPlatform) || "windows".equalsIgnoreCase(selectPlatform)) {
             initializeDriver();
             driver.manage().timeouts().pageLoadTimeout(45, TimeUnit.SECONDS);
@@ -123,7 +123,7 @@ public class BaseTest {
     public void quitDriver() {
         driver.quit();
     }
-    public void initMap(List<File> fileList) throws FileNotFoundException {
+    public void initMap(List<File> fileList) throws FileNotFoundException { // JSON dosyalarını okuyup map haline dönüştürür
         elementMapList = new ConcurrentHashMap<>();
         Type elementType = new TypeToken<List<ElementInfo>>() {
         }.getType();
@@ -140,7 +140,7 @@ public class BaseTest {
         }
     }
 
-    public static List<File> getFileList(String directoryName) throws IOException { //Json dosyalarını bulup liste haline döndüren metod, kütüphane
+    public static List<File> getFileList(String directoryName) throws IOException { //Json dosyalarını bulup liste haline döndüren metod
         List<File> dirList = new ArrayList<>(); //File nesnelerini saklayacak bir list oluşturulur
         try (Stream<Path> walkStream = Files.walk(Paths.get(directoryName))) { // tüm dosya ve klasörleri gezer, kütüphanede rafları gezmesi örneği
             walkStream.filter(p -> p.toFile().isFile()).forEach(f -> { // sadece dosyaları filtreler, kütüphanede yer alan kitapları sadece (gazete ve dergi değil)

@@ -10,4 +10,5 @@ Search for roundtrip flight tickets
 * Bir yetişkin, bir çocuk bileti alınır
 * 'Business' sınıfı seçilir ve 'Tamam' butonuna tıklanır
 * 'Ucuz Bilet Bul' butonuna tıklanır ve sayfanın açıldığı kontrol edilir
+* 'Nereden' input alanına "" ve 'Nereye' input alanına "Adnan Menderes" girilir
 
